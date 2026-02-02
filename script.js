@@ -114,6 +114,7 @@ contactForm.addEventListener('submit', (e) => {
     const phone = document.getElementById('phone').value;
     const product = document.getElementById('product').value;
     const quantity = document.getElementById('quantity').value;
+    const address = document.getElementById('address').value;
     const message = document.getElementById('message').value;
 
     // Get product name
@@ -125,6 +126,7 @@ contactForm.addEventListener('submit', (e) => {
     waMessage += `Saya *${name}* ingin memesan ikan lele.\n\n`;
     waMessage += `📦 *Produk:* ${productName}\n`;
     waMessage += `📊 *Jumlah:* ${quantity}\n`;
+    waMessage += `🏠 *Alamat:* ${address}\n`;
 
     if (message) {
         waMessage += `\n💬 *Pesan:*\n${message}\n`;
